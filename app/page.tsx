@@ -130,8 +130,15 @@ export default function Home() {
               {[
                 {
                   year: "2024",
-                  title: "SpeakUp",
-                  category: "Anti-Bullying App",
+                  title: "SpeakUp App",
+                  category: "Mobile App",
+                  description: "Student-facing reporting system with teacher-side processing for addressing bullying incidents.",
+                  tech: ["Flutter", "Firebase", "UI/UX Design"],
+                },
+                {
+                  year: "2024",
+                  title: "EcoBoost App",
+                  category: "Mobile App",
                   description: "Student-facing reporting system with teacher-side processing for addressing bullying incidents.",
                   tech: ["Flutter", "Firebase", "UI/UX Design"],
                 },
@@ -202,6 +209,18 @@ export default function Home() {
             <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
               {[
                 {
+                  title: "App Development",
+                  excerpt: "Built multiple apps using Flutter, Kodular, and Thunkable ranging from utilities to educational games.",
+                  focus: "Development",
+                  areas: "Flutter • Kodular • Thunkable",
+                },
+                {
+                  title: "Web Development",
+                  excerpt: "Created websites and blogs using WordPress and static site generators for work and personal use.",
+                  focus: "Web Dev",
+                  areas: "WordPress • HTML/CSS • JavaScript",
+                },
+                {
                   title: "Teaching Technology",
                   excerpt: "Teaching Canva, WordPress, and app development at multiple institutions across Indonesia and Thailand.",
                   focus: "Education",
@@ -212,18 +231,6 @@ export default function Home() {
                   excerpt: "Competed in UI/UX competitions and designed mobile interfaces for cultural preservation and community apps.",
                   focus: "Design",
                   areas: "Figma • Mobile Design • Branding",
-                },
-                {
-                  title: "App Development",
-                  excerpt: "Built multiple apps using Flutter, Kodular, and Thunkable ranging from utilities to educational games.",
-                  focus: "Development",
-                  areas: "Flutter • Kodular • Thunkable",
-                },
-                {
-                  title: "Web Development",
-                  excerpt: "Created websites and blogs using WordPress and static site generators for personal and educational use.",
-                  focus: "Web Dev",
-                  areas: "WordPress • HTML/CSS • JavaScript",
                 },
               ].map((item, index) => (
                 <article
@@ -264,7 +271,7 @@ export default function Home() {
                     href="mailto:your.email@example.com"
                     className="group flex items-center gap-3 text-foreground hover:text-muted-foreground transition-colors duration-300"
                   >
-                    <span className="text-base sm:text-lg">Get in touch</span>
+                    <span className="text-base sm:text-lg"><a href="https://www.linkedin.com/in/alfirdaous">Get in touch</a></span>
                     <svg
                       className="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300"
                       fill="none"
@@ -283,10 +290,10 @@ export default function Home() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {[
-                  { name: "Instagram", handle: "@alfirdaous", url: "#" },
-                  { name: "YouTube", handle: "KAFprojects", url: "#" },
-                  { name: "LinkedIn", handle: "Kenzie Ahnaf Firdaus", url: "#" },
-                  { name: "GitHub", handle: "@alfirda0us", url: "#" },
+                  { name: "Instagram", handle: "@alfirdaous", url: "instagram.com/_alfirdaous" },
+                  { name: "YouTube", handle: "KAFprojects", url: "https://www.youtube.com/@kenziemrhsnym" },
+                  { name: "LinkedIn", handle: "Kenzie A. Firdaus", url: "https://www.linkedin.com/in/alfirdaous" },
+                  { name: "GitHub", handle: "@alfirda0us", url: "https://github.com/alfirda0us" },
                 ].map((social) => (
                   <Link
                     key={social.name}
